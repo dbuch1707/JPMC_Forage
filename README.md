@@ -18,4 +18,8 @@ Task 2-In '**Chase_Simulation_task2.py**', we define price_storage_contract() fu
 Task 3- 
 Data: '**Task 3 and 4_Loan_Data.csv**' is the data filewith following columns- customer_id, credit_lines_outstanding,loan_amt_outstanding,total_debt_outstanding,income,years_employed,fico_score,default.
 Analysis: I performed some analysis on excel and observed that customers who have higher total_debt_outstanding than loan_amt_outstanding and credit_line>=4 have higher probability of deafulting on the loan. Lower FICO scores also play a key part.
-Code: 
+Code: '**Chase_simulation_task3.py**' is the python notebook (IDE-JupyterNB) for this task. The code uses RandomForestClassifier model for classification to classify customers as default customer or not. The function predict_rf_expected_loss() defined in the code calculates propbability % and expected loss in case of default. 
+
+Task 4-'**Chase_simulation_task4.py**' uses MSE(Mean Squared Error) [func:generate_mse_buckets() & map_rating()] to segment customers into 10 rankings based on their FICO scores. (lower the score, higher the probability of default) 
+
+P.S. I have also uploaded example answers provided by JPMC at the end of submission.
