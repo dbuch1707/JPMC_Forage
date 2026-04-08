@@ -23,16 +23,6 @@ file_path
 df=pd.read_csv(file_path, parse_dates=['Dates'], index_col='Dates')
 #df
 
-
-# In[4]:
-
-
-# 2. Prepare Data for Prophet
-# Prophet REQUIRES specific column names: 'ds' for dates and 'y' for values
-df_prophet = df.rename(columns={'Dates': 'ds', 'Prices': 'y'})
-df_prophet['ds'] = pd.to_datetime(df_prophet['ds'])
-
-
 # In[10]:
 
 
